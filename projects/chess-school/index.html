@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Chess School</title>
+  <meta name="description" content="A chess school webpage">
+  <meta name="author" content="stevepapazis">
+
+  <link rel="stylesheet" href="./styles.css?v=1.0">
+
+  <link rel="icon" type="image/png" href="./favicon.ico"/>
+
+</head>
+
+<body>
+
+
+
+  <chess-board
+    style="width: 400px"
+    draggable-pieces
+    orientation="black"
+    position="2r2kr1/1p3p1Q/p3p2p/Pb1pN3/3P1q2/8/1P3RPP/R5K1 b - - 1 25"
+    ></chess-board>
+
+  <button id="move1Btn">e2-e4</button>
+  <button id="move2Btn">d2-d4, g8-f6</button>
+  <button id="startPositionBtn">Start Position</button>
+  <a href="../../node_modules/chessboard-element/">link text</a>
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/chessboard-element/bundled/chessboard-element.bundled.js"></script>
+  <script src="./chessscripts.js"></script>
+</body>
+</html>

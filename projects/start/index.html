@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>steve's web dev case studies</title>
+  <meta name="description" content="A landing page for my web dev profolio.">
+  <meta name="author" content="stevepapazis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="public">
+  <link rel="icon" type="image/ico" href="./favicon.ico"/>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="./milky-way-1023340_1920.jpg" type="image/jpeg"></link>
+</head>
+
+<body>
+    <div id="loading">
+          <div id="spinner"></div>
+          <div id="spinner2"></div>
+          <div id="spinner3"></div>
+    </div>
+
+    <div id="header">
+      <div id="title">
+        steve's web <br class="mobile-break">
+        developing <br class="mobile-break">
+        adventures
+      </div><br>
+
+      <div id="links">
+        <a href="#about">about me</a><br class="mobile-break">
+        <a href="#projects">projects</a><br class="mobile-break">
+        <a class="btn_social" href="https://twitter.com/blunderoni" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+        <a class="btn_social" href="https://github.com/stevepapazis" aria-label="github"><i class="fab fa-github"></i></a>
+      </div>
+
+    </div>
+
+    <div id="middle-wrapper">
+      <div id="middle" class="middle-after-load">
+        <div id="tagline">
+            hey there! <br>
+            welcome to my portfolio <br>
+            thanks for dropping by
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+            <div id="about">
+              <h1>about me</h1>
+                <p>
+                  as a person who loves logic and problem solving, i've studied maths acquiring a msc
+                  (pdes/convex analysis) in the process.
+                  nevertheless, i've always been fascinated by computers and technology; spending a
+                  bunch of my free time learning new programming concepts and writing &nbsp;&mdash;&nbsp;
+                  debugging <span id="crying-face">:'(</span> &nbsp;&mdash;&nbsp; code.
+                </p>
+
+                <p>
+                  among other things, i'm interested in web developing; combining html, css and js to create
+                  beautiful, dynamic and memorable designs.
+                </p>
+
+                <p>
+                  in the future, i'd love to learn more about data science and contribute to some open source chess projects.
+                </p>
+            </div>
+
+            <div id="projects">
+                <h1>projects</h1>
+
+                <div class="project">
+                  <h2>project name</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                  </p>
+                  <button class="btn_visit btn_swap" onclick="location.href=''"> <!-- todo  -->
+                    <span class="regular"><u>visit the project</u></span>
+                    <span class="alternative"><u>coming soon...</u></span>
+                  </button>
+                  <br class="mobile-break">
+                  <button class="btn_source btn_swap" onclick="location.href=''">  <!-- todo  -->
+                    <span class="regular"><u>github repository</u></span>
+                    <span class="alternative"><u>behind the scenes</u></span>
+                  </button>
+                </div>
+
+                <div class="project">
+                  <h2>another project name</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                  </p>
+                  <button class="btn_visit btn_swap" onclick="location.href=''"> <!-- todo  -->
+                    <span class="regular"><u>visit the project</u></span>
+                    <span class="alternative"><u>coming soon...</u></span>
+                  </button>
+                  <br class="mobile-break">
+                  <button class="btn_source btn_swap" onclick="location.href=''">  <!-- todo  -->
+                    <span class="regular"><u>github repository</u></span>
+                    <span class="alternative"><u>behind the scenes</u></span>
+                  </button>
+                </div>
+
+                <div class="project">
+                  <h2>personal page</h2>
+                  <p>
+                    a personal page to showcase projects. you're already here!
+                  </p><br>
+                  <button class="btn_visit btn_swap" onclick="location.href='./index.html'">
+                    <span class="regular"><u>visit the project</u></span>
+                    <span class="alternative"><u>is this inception?</u></span>
+                  </button>
+                  <br class="mobile-break">
+                  <button class="btn_source btn_swap" onclick="location.href=''">  <!-- todo  -->
+                    <span class="regular"><u>github repository</u></span>
+                    <span class="alternative"><u>behind the scenes</u></span>
+                  </button>
+                </div>
+
+            </div>
+
+    </div>
+
+    <div id="btn_top_fixed">
+      <a id="btn_top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><br>
+      <div id="percentage">%<div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "chessboard-element": "^1.1.0",
+    "chessground": "^7.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevepapazis/web-dev.git"
+  },
+  "author": "stevepapazis",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/stevepapazis/web-dev/issues"
+  },
+  "homepage": "https://github.com/stevepapazis/web-dev#readme",
+  "description": ""
+}
