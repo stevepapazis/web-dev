@@ -1,22 +1,29 @@
+---
+permalink: /
+---
+
+
 <!doctype html>
 
-<html lang="en">
+<html lang="en" manifest="manifest.appcache">
 <head>
   <meta charset="utf-8">
-
   <title>steve's web dev case studies</title>
-  <meta name="description" content="A landing page for my web dev profolio.">
+  <meta name="description" content="My web profolio">
   <meta name="author" content="stevepapazis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="cache-control" content="public">
-  <link rel="icon" type="image/ico" href="./favicon.ico"/>
-  <link rel="stylesheet" href="./styles.css">
+  <meta name="keywords" content="web design, web development">
+  <meta content="text/html; X-Content-Type-Options=nosniff">
+  <meta http-equiv="Cache-Control" content="public">
+  <link rel="icon" content="image/x-icon" href="./projects/portfolio/favicon.ico"/>
+  <link rel="stylesheet" href="./projects/portfolio/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="./milky-way-1023340_1920.jpg" type="image/jpeg"></link>
+
+    {% seo %}
 </head>
 
 <body>
@@ -28,8 +35,8 @@
 
     <div id="header">
       <div id="title">
-        steve's web <br class="mobile-break">
-        developing <br class="mobile-break">
+        steve's web
+        developing
         adventures
       </div><br>
 
@@ -44,11 +51,7 @@
 
     <div id="middle-wrapper">
       <div id="middle" class="middle-after-load">
-        <div id="tagline">
-            hey there! <br>
-            welcome to my portfolio <br>
-            thanks for dropping by
-        </div>
+        <span id="tagline">hey there!<br>welcome to my portfolio<br>thanks for dropping by</span>
       </div>
     </div>
 
@@ -57,7 +60,7 @@
               <h1>about me</h1>
                 <p>
                   as a person who loves logic and problem solving, i've studied maths acquiring a msc
-                  (pdes/convex analysis) in the process.
+                  in the process (pdes & convex analysis).
                   nevertheless, i've always been fascinated by computers and technology; spending a
                   bunch of my free time learning new programming concepts and writing &nbsp;&mdash;&nbsp;
                   debugging <span id="crying-face">:'(</span> &nbsp;&mdash;&nbsp; code.
@@ -73,8 +76,31 @@
                 </p>
             </div>
 
+
+
+
             <div id="projects">
                 <h1>projects</h1>
+
+
+
+                <div class="project">
+                  <h2>a chess school website</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                  </p><!-- todo  -->
+                  <button class="btn_visit btn_swap" onclick="location.href='./chess-school/'"> <!-- todo  -->
+                    <span class="regular"><u>visit the project</u></span>
+                    <span class="alternative"><u>coming soon...</u></span>
+                  </button>
+                  <br class="mobile-break">
+                  <button class="btn_source btn_swap" onclick="location.href='https://github.com/stevepapazis/web-dev/tree/main/projects/chess-school'">
+                    <span class="regular"><u>github repository</u></span>
+                    <span class="alternative"><u>behind the scenes</u></span>
+                  </button>
+                </div>
+
+
 
                 <div class="project">
                   <h2>project name</h2>
@@ -92,6 +118,8 @@
                   </button>
                 </div>
 
+
+
                 <div class="project">
                   <h2>another project name</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
@@ -107,17 +135,19 @@
                   </button>
                 </div>
 
+
+
                 <div class="project">
                   <h2>personal page</h2>
                   <p>
-                    a personal page to showcase projects. you're already here!
-                  </p><br>
-                  <button class="btn_visit btn_swap" onclick="location.href='./index.html'">
+                    a personal page to showcase projects.<br>you're already here!
+                  </p>
+                  <button class="btn_visit btn_swap" onclick="location.href=''">
                     <span class="regular"><u>visit the project</u></span>
                     <span class="alternative"><u>is this inception?</u></span>
                   </button>
                   <br class="mobile-break">
-                  <button class="btn_source btn_swap" onclick="location.href=''">  <!-- todo  -->
+                  <button class="btn_source btn_swap" onclick="location.href='https://github.com/stevepapazis/web-dev/tree/main/projects/portfolio'">
                     <span class="regular"><u>github repository</u></span>
                     <span class="alternative"><u>behind the scenes</u></span>
                   </button>
@@ -133,6 +163,6 @@
     </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="./scripts.js"></script>
+  <script src="./projects/portfolio/scripts.js"></script>
 </body>
 </html>

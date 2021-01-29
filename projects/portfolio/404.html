@@ -1,0 +1,77 @@
+---
+permalink: /404.html
+---
+
+<title>404: Page not found :(</title>
+
+<link rel="stylesheet" href={{"/projects/portfolio/styles.css" | relative_url }}>
+<link rel="icon" content="image/x-icon" href={{"/projects/portfolio/favicon.ico" | relative_url }}>
+<style type="text/css" media="screen">
+  .container {
+    margin: auto;
+    text-align: center;
+    border: solid 5px;
+    border-radius: 50px;
+    width: 40%;
+    top:25vh; 
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position:absolute;
+    left:0;
+    right:0;
+  }
+  h1 {
+    margin: auto;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  #middle {
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    font-size: 18px!important;
+    position:relative!important;
+  }
+  .fade-in {
+    -webkit-animation: fadeIn ease-in-out 1.5s;
+    -moz-animation: fadeIn ease-in-out 1.5s;
+    -o-animation: fadeIn ease-in-out 1.5s;
+    -ms-animation: fadeIn ease-in-out 1.5s;
+    animation: fadeIn ease-in-out 1.5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+</style>
+
+<body>
+  <div id="middle" class="fade-in">
+    <div class="container">
+      <h1>404</h1>
+
+      <p><strong>Page not found <span id="crying-face">:(</span></strong></p>
+      <p>The requested page could not be found.</p>
+    </div>
+</div>
+</body>
