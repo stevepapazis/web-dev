@@ -86,13 +86,25 @@ function typewriter(id, speed1 = 200, speed2 = 200, cb = function(){} ) {
     typeNextLetter(0,text);
 };
 
-async function destroyEverything() {
-    setTimeout(function(){destroyEverything()},5000)
-    typewriter("tagline",0,0);
-    typewriter("title",0,0);
-    typewriter("about",0,0);
-    typewriter("portfolio",0,0);
-    typewriter("links",0,0);
+async function destroyEverything(i=0) {
+    setTimeout(function(){
+        typewriter("title",0,0);
+        },1500)
+    setTimeout(function(){
+        tagline.style.display = "block";
+        typewriter("tagline",0,0);
+        },3000);
+    setTimeout(function(){
+        typewriter("about",0,0);
+        },4500);
+    setTimeout(function(){
+        tagline.style.display = "block";
+        typewriter("links",0,0);
+        },5000);
+    setTimeout(function(){
+        typewriter("projects",0,0);
+        },10000);
+    setTimeout(function(){destroyEverything(i+1)}, 4000+i*500);
 };
 
 

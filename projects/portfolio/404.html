@@ -5,12 +5,15 @@ permalink: /404.html
 <title>404: Page not found :(</title>
 
 <link rel="stylesheet" href={{"/projects/portfolio/styles.css" | relative_url }}>
-<link rel="icon" content="image/x-icon" href={{"/projects/portfolio/favicon.ico" | relative_url }}>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+<link rel="icon" content="image/png" href={{"/projects/portfolio/favicon.png" | relative_url }}/>
 <style type="text/css" media="screen">
   .container {
     margin: auto;
     text-align: center;
-    border: solid 5px;
+    color: #fff;
+    border: solid #fff 5px;
     border-radius: 50px;
     width: 40%;
     top:25vh; 
@@ -23,8 +26,10 @@ permalink: /404.html
     right:0;
   }
   h1 {
+    font-family: "Times Roman", monospace;
+    font-weight: bold;
     margin: auto;
-    font-size: 4em;
+    font-size: 6em;
     line-height: 1;
     letter-spacing: -1px;
   }
@@ -42,6 +47,9 @@ permalink: /404.html
     -o-animation: fadeIn ease-in-out 1.5s;
     -ms-animation: fadeIn ease-in-out 1.5s;
     animation: fadeIn ease-in-out 1.5s;
+  }
+  a {
+    color:#fff;
   }
   @keyframes fadeIn {
     0% {opacity:0;}
@@ -70,8 +78,10 @@ permalink: /404.html
     <div class="container">
       <h1>404</h1>
 
-      <p><strong>Page not found <span id="crying-face">:(</span></strong></p>
-      <p>The requested page could not be found.</p>
-    </div>
+      <p><strong>page not found <span id="crying-face">:(</span></strong></p>
+      <p>the requested page could not be found.</p>
+
+    <a href={{ "/" | relative_url}}>take me back</a>
+  </div>
 </div>
 </body>

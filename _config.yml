@@ -4,7 +4,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/web-dev" # the subpath of your site, e.g. /blog
 url: "https://stevepapazis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -31,3 +30,10 @@ plugins:
 
 exclude:
   - node_modules
+
+permantlink: /:categories/:title/
+
+collections:
+  projects:
+    output: true
+    permantlink: /:name
