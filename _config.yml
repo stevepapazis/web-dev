@@ -5,7 +5,6 @@ baseurl: "/web-dev" # the subpath of your site, e.g. /blog
 url: "https://stevepapazis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
 # Exclude from processing.
@@ -31,9 +30,13 @@ plugins:
 exclude:
   - node_modules
 
-permantlink: /:categories/:title/
+# permalink: /:collection/:name/
 
 collections:
-  projects:
+  collections_dir: projects
+  chess-school:
     output: true
-    permantlink: /:name
+    permalink: /chess-school/:name/
+  #name:
+    #output: true
+    #permantlink: /name/:name
